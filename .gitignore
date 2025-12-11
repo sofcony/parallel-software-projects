@@ -6,7 +6,6 @@ run*
 
 # Ignore 
 archive/
-__pycache__/
 
 # Ignore other common build artifacts
 *.a
@@ -20,8 +19,9 @@ __pycache__/
 *~
 .DS_Store
 
-# Ignore 
+# Ignore python files
 .venv/
+__pycache__/
 
 # Ignore logs and temporary files
 *.log
