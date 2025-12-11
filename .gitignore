@@ -1,0 +1,28 @@
+# Ignore compiled C binaries
+*.out
+*.o
+*.exe
+run*
+
+# Ignore 
+archive/
+__pycache__/
+
+# Ignore other common build artifacts
+*.a
+*.so
+*.obj
+*.dll
+
+# Ignore editor/OS files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Ignore 
+.venv/
+
+# Ignore logs and temporary files
+*.log
+temp/

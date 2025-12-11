@@ -1,0 +1,7 @@
+# Ignore compiled C binaries
+*.out
+*.o
+run*
+
+# Ignore 
+archive/
