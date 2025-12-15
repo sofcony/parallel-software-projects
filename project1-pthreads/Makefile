@@ -19,8 +19,8 @@ BIN_1E := 1e
 # Sources
 # SRC_1A := 1a_mult_polyn.c
 # SRC_1B := 
-SRC_1C := 1c_matrix.c
-SRC_1D := 1d_bank.c
+SRC_1C := 1c_matrices_nonzero/matrix_nz.c
+SRC_1D := 1d_bank_simulation/bank.c
 # SRC_1E := 
 
 # Build all 
