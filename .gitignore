@@ -1,17 +1,5 @@
-# Ignore compiled C binaries
-*.out
-*.o
-*.exe
-run*
-
 # Ignore 
 archive/
-
-# Ignore other common build artifacts
-*.a
-*.so
-*.obj
-*.dll
 
 # Ignore editor/OS files
 *.swp
