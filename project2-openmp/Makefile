@@ -4,14 +4,18 @@ FLAGS = -g -Wall -fopenmp
 
 all: poly_mult mergesort sparse_array
 
-poly_mult: ./2a_polynomial_multiplication/poly_mult.c
-	$(CC) $(FLAGS) ./2a_polynomial_multiplication/poly_mult.c -o $@
+SRC_2A := 2a_polynomial_multiplication/poly_mult.c
+SRC_2B := 2b_sparse_array/sparse_array.c
+SRC_2C := 2c_mergesort/mergesort.c
 
-sparse_array: ./2b_sparse_array/sparse_array.c
-	$(CC) $(FLAGS) ./2b_sparse_array/sparse_array.c -o $@
+poly_mult: $(SRC_2A)
+	$(CC) $(FLAGS) $^ -o $@
 
-mergesort: ./2c_mergesort/mergesort.c
-	$(CC) $(FLAGS) ./2c_mergesort/mergesort.c -o $@
+sparse_array: $(SRC_2B)
+	$(CC) $(FLAGS) $^ -o $@
+
+mergesort: $(SRC_2C)
+	$(CC) $(FLAGS) $^ -o $@
 
 clean:
-	rm -f poly_mult mergesort sparse_array
+	rm -f poly_mult mergesort sparse_array *.o
